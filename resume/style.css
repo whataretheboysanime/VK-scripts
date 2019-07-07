@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body {
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  background: url("https://i.ibb.co/GPPC16Q/Resume-page.jpg");
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  background-position: center top;
+  font-family: 'Russo One', sans-serif;
+}
+
+.container {
+  z-index: 1;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+}
+
+#animate-text {
+  font-size: 4vw;
+  line-height: 75vh;
+  color: aliceblue;
+}
+
+/* Navigation bar */
+
+#navbar {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f3a683;
+  width: 100vw;
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li:hover {
+  float: left;
+}
+
+#navbar ul li a {
+  display: inline-block;
+  width: 15vw;
+  padding: 2vh 5vw;
+  font-size: 3.1vw;
+  background-color: #f3a683;
+  color: rgb(145, 95, 55);
+  text-align: center;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  background-color: rgba(145, 96, 55, 0.178);
+  padding: 1.62vh 5vw;
+  color: #f07e216b;
+  border-bottom: 0.75vh solid #f07e216b;
+}
+
+/* Main */
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /*background-color: #f07e216b;*/
+}
+
+.main div:hover {
+  background-color: rgb(255, 255, 255);
+  min-height: 300px;
+  min-width: 180px;
+  height: 30vh;
+  width: 18vh;
+}
+
+.main a:link {
+  color: rgba(4, 4, 24, 0.705);
+  text-decoration: none;
+}
+
+.main a:visited {
+  color: rgba(4, 4, 24, 0.705);
+  text-decoration: none;
+}
+
+.main a:hover {
+  color: rgba(4, 4, 24, 0.705);
+  text-decoration: none;
+}
+
+.main a:active {
+  color: rgba(4, 4, 24, 0.705);
+  text-decoration: none;
+}
+
+.circle {
+  background-color: rgba(255, 255, 255, 0.479);
+  min-height: 24.4vh;
+  min-width: 11.7vw;
+  height: 25vh;
+  width: 15vh;
+  right: 0;
+  top: 42%;
+  position: absolute;
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  overflow: hidden; /* всё, что выходит за рамки блока обрезается */
+  white-space: nowrap; /* блок может содержать не более одной строки */
+  text-align: center;
+  display: inline-block;
+  font-size: 1.25vw;
+  line-height: 25vh;
+}
+
+.circle:hover {
+  min-height: 29.3vh;
+  min-width: 14.1vw;
+  height: 30vh;
+  width: 18vh;
+  right: 0;
+  top: 39%;
+  font-size: 1.5vw;
+  line-height: 30vh;
+}
+
+/* About */
+
+.ellipse {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.699);
+  height: auto;
+  max-width: 90vw;
+  margin: 5vh auto;
+  border: 4px solid rgba(255, 0, 0, 0.233);
+  border-radius: 25vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.836);
+}
+
+.contentBox {
+  padding: 2.5vw 7.5vw 0vw 10vw;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.round {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  position: relative;
+  transform: scale(1);
+  transition: transform 1s;
+}
+
+.round:hover {
+  transform: scale(1.25);
+  transition: transform 1s;
+}
+
+.scaleThis {
+  transform: scale(1.5);
+  transition: transform 1s;
+}
+
+/*Portfolio*/
+
+.box {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.699);
+  padding: 4vh;
+  min-height: 90vh;
+  min-width: 90vw;
+  margin: 5vh auto;
+  border: 4px solid rgba(255, 0, 0, 0.233);
+  border-radius: 5vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.836);
+  text-align: justify;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.box ul li {
+  font-size: 2vw;
+  font-weight: normal;
+}
+
+.box ul li a:link {
+  color: rgba(4, 4, 24, 0.705);
+  text-decoration: none;
+}
+
+.box ul li a:visited {
+  color: rgba(4, 4, 24, 0.705);
+  text-decoration: none;
+}
+
+.box ul li a:hover {
+  color: rgba(4, 4, 24, 0.705);
+  text-decoration: none;
+}
+
+.box ul li a:active {
+  color: rgba(4, 4, 24, 0.705);
+  text-decoration: none;
+}
+
+.link-box {
+  margin: auto;
+  background-color: #f3a683;
+  border: 2px solid rgba(255, 0, 0, 0.233);
+  border-radius: 1vw;
+  font-size: 1.5vw;
+}
+
+/*Contacts*/
+
+.footer-container {
+  z-index: 1;
+  position: relative;
+  max-height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+
+#blackBox {
+  position: relative;
+  background-color: rgba(12, 10, 10, 0.959);
+  top: 20vh;
+  min-height: 25vh;
+  min-width: 99.325vw;
+  box-shadow: 0 0 5vw 1vw rgba(196, 102, 102, 0.836);
+  text-align: justify;
+  font-size: 2vw;
+  color: aliceblue;
+}
+
+#blackBox table tr td a {
+  text-decoration: none;
+}

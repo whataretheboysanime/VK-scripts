@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume</title>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="script.js"></script>
+    </head>
+        <body>
+
+            <p id="home">.</p>
+
+            <!-- Navigation bar -->
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home" class="scroll active" id="home-link">Main</a></li>
+                    <li><a href="#about" class="scroll" id="about-link">About</a></li>
+                    <li><a href="#portfolio" class="scroll" id="portfolio-link">Projects</a></li>
+                    <li><a href="#contacts" class="scroll" id="contacts-link">Contacts</a></li>
+                </ul>
+            </nav>
+            <!-- Navigation bar -->
+
+            <!-- Sections -->
+            <header id="general" class="main">
+                <h1 id="animate-text">Welcome, my friend!</h1>
+                <a style="text-decoration: none;" class="scroll active" href="#about" id="about-link">
+                    <p class="circle">What's the next?</p>
+                </a>
+            </header>
+
+            <section id="about" class="container">
+                <div class="ellipse">
+                    <table class="contentBox">
+                        <tr>
+                            <td><img alt="My photo" src="https://i.ibb.co/2KJ9bHK/ava.jpg" class="round"></image></td>
+                            <td><p style="font-size: 2vw">Hi, my name is Alexey Letunov!</p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 1.5vw" colspan="2"><p> 
+                                    &nbsp;&nbsp; I'm from Russia.
+                                    I was graduated the Moscow Technical University
+                                    of Communication and Informatics to specialization 
+                                    «Infocommunication technology and systems of connection».
+                                    Last two cources was consisted cathedra's lections of
+                                    «Information security». First semester includes discipline
+                                    to OOP on example language of programming C++. Theme of my 
+                                    graduation qualification work relates with machine learning                  
+                                    and its had next title: «Research influence algorithms of
+                                    choosing attributes on quality of classification of mobile traffic».
+                                    </p>
+                                    <p>
+                                    &nbsp;&nbsp; I have a small experience of development with next
+                                    stack of technologys: language of programming Java (Weka), language
+                                    of programming C# (.NET, EntityFramework, ASP .NET Core 2, Xamarin),
+                                    HTML5/CSS3/JS.
+                                    This page was developed using last paradigm of web programming.
+                            </p></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="portfolio" class="container">
+                <div class="box">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My achievements:
+                    <ul>
+                        <li>VK Audio Scripts<br>                   
+                            <a target="_blank" href="https://github.com/whataretheboysanime/js-scripts/blob/master/vk/vk_audio.js">
+                                <div id="link1">
+                                </div>
+                            </a>
+                        </li>
+                        <li>VK Privacy Scripts<br>
+                            <a target="_blank" href="https://github.com/whataretheboysanime/js-scripts/blob/master/vk/vk_settings_privacy.js">
+                                <div id="link2">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer id="contacts" class="footer-container">
+                <div id="blackBox">
+                    <table align="center">
+                        <tr>
+                            <td style="width: 55vw; height: 20vh; text-align: center;">Contacts</td>
+                            <td style="width: 35vw; height: 20vh; text-align: right;">
+                                <ul type="none">
+                                    <li>Mail: alexletunov96@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li>Twitter: <a target="_blank" href="https://twitter.com/readerforyourc1">readerforyourclearmind&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                    <li>Github: <a target="_blank" href="https://github.com/whataretheboysanime">whatareboystheanime&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="width: 95vw; height: 5vh; font-size: 2.5vh; text-align: right;">Copyright © &nbsp; 2019  &nbsp;&nbsp;&nbsp;&nbsp; Designed by Alexey Letunov &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+            </footer>
+            <!-- Sections -->
+        </body>
+    </html>
