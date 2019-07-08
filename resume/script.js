@@ -1,16 +1,17 @@
-var processChangingOfColorsOuter, processChangingOfColorsInner;
+var processChangingOfColorsOuter, processChangingOfColorsInner, timeoutProcess;
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+
     for (var i = 0; i < 6; i++) {
       color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
 }
 
-var labelAnimate = function() {
-    var txt = $("#animate-text");
+var labelAnimate = function () {
+    let txt = $("#animate-text");
 
     //Animate welcome screen text
     setTimeout(function() {
@@ -24,8 +25,8 @@ var labelAnimate = function() {
     }, 3000);
 }
 
-function changingColor(txt) {
-    var txt = $("#animate-text");
+var changingColor = function () {
+    let txt = $("#animate-text");
 
     processChangingOfColorsOuter = setTimeout(function run() {           
         txt.animate({
@@ -35,22 +36,21 @@ function changingColor(txt) {
     }, 1600);
 }
 
-var IsActiveHome = function() {
-    var txt = $("#animate-text");
+function IsActiveHome () {
+    let txt = $("#animate-text");
 
     if($("#home-link").hasClass("active")) {
-        console.log("home has class active");
         labelAnimate();
-        setTimeout(changingColor, 6500);
+        timeoutProcess = setTimeout(changingColor, 6500);
     } else {
-        if(txt.hasClass("scaleThis")) { 
-            clearTimeout(processChangingOfColorsInner);    
-            clearTimeout(processChangingOfColorsOuter);   
-            txt.animate({
-                color: "aliceblue" 
-            }, 1000)
-            txt.removeClass("scaleThis");
-        }
+        clearTimeout(timeoutProcess);
+        clearTimeout(processChangingOfColorsInner);    
+        clearTimeout(processChangingOfColorsOuter); 
+
+        txt.animate({
+            color: "aliceblue" 
+        }, 1000);
+        txt.removeClass("scaleThis");
     }
 }
 
@@ -74,7 +74,21 @@ function linkTransform () {
     }
 }
 
+function timer () {
+    let txt = $("#animate-text");
+
+    setInterval(function () {
+        if(txt.hasClass("scaleThis") && !($("#home-link").hasClass("active"))) {
+            txt.animate({
+                color: "aliceblue" 
+            }, 1000);
+            txt.removeClass("scaleThis");
+        }
+    }, 500);
+}
+
 $(document).ready(function() {
+    timer();
     linkTransform();
     IsActiveHome();
 
