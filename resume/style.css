@@ -120,6 +120,7 @@ body {
   display: inline-block;
   font-size: 1.25vw;
   line-height: 25vh;
+  transition-duration: 1s;
 }
 
 .circle:hover {
@@ -236,7 +237,7 @@ body {
   background-color: rgba(12, 10, 10, 0.959);
   top: 20vh;
   min-height: 25vh;
-  min-width: 98.75vw;
+  min-width: 99.325vw;
   box-shadow: 0 0 5vw 1vw rgba(196, 102, 102, 0.836);
   text-align: justify;
   font-size: 2vw;
